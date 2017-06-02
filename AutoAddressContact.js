@@ -38,7 +38,7 @@ function load(licenceKey) {
   );
 }
 
-// this is where you seed the address found data to your input
+// this is where you seed the address to your inputs
 function myAutoAddressHandler(args) {
   // do nothing if auto address response is empty
   if (!args) return;
