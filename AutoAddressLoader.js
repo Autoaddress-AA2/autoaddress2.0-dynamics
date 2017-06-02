@@ -107,7 +107,10 @@ function getEcadData(id) {
   });
 }
 
-function onFound(args) {
+function onFound(args) {  
+  // do nothing if auto address response is empty
+  if (!args) return;
+  
   window.parent
     .$("#" + theTargetElement)
     .AutoAddress()

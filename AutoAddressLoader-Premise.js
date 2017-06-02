@@ -102,6 +102,9 @@ function getEcadData(id) {
 }
 
 function onFound(args) {
+  // do nothing if auto address response is empty
+  if (!args) return;
+  
   $("#" + theTargetElement)
     .AutoAddress()
     .setAddress(args.reformattedAddress[0]);

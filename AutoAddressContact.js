@@ -39,10 +39,9 @@ function load(licenceKey) {
 }
 
 // this is where you seed the address to your inputs
+// This example is for online version. Remove "window.parent." for on premise
 function myAutoAddressHandler(args) {
-  // do nothing if auto address response is empty
-  if (!args) return;
-    // set  input
+  // set  input
   window.parent.Xrm.Page
     .getAttribute("address1_line1")
     .setValue(args.reformattedAddress[0]);
@@ -69,7 +68,6 @@ function myAutoAddressHandler(args) {
 }
 
 // for ecad data callback
-function myEcadHandler(data){
-  // the data returned from get ecad
-  console.log(data);
+function myEcadHandler(data) {
+  // seed your inputs here
 }
